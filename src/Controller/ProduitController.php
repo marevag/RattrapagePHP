@@ -18,4 +18,6 @@ class ProduitController extends AbstractController
           'produits' => $repo -> findAll()
         ]);
     }
+
+  
 }
