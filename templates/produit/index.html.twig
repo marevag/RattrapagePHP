@@ -22,8 +22,12 @@
         </a>
       </h3>
       <p>{{ produit.created|date('d/m/Y') }}</p>
-      <img src={{ produit.picture }}/>
+      <img src="image/index.png"/>
       <a href="#" class="btn btn-dark">En savoir +</a>
+      <a href="{{ path('panier_add', {'id' : produit.id}) }}" class="btn btn-success float-right">
+                        <i class="fas fa-shopping-cart mr-1"></i>
+                        Ajouter
+                    </a>
     </div>
   </div>
   {% endfor %}
