@@ -17,11 +17,66 @@
 	<body>
 		{{ include('nav.html.twig') }}
 		{% block body %}{% endblock %}
-
-		
-	</body>
-        {{ include('footer.html.twig') }}
+        
 		{% block javascripts %}
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 		{% endblock %}
+		
+	</body>
+    <footer
+	class="page-footer font-small ">
+
+	<!-- Footer Links -->
+	<div
+		class="containe text-center text-md-left">
+
+		<hr
+		class="clearfix w-100 d-md-none">
+
+		<!-- Grid column -->
+		<div class="col-md-3 mx-auto">
+
+
+			<a href="#">Politique de confidentialité</a>
+
+		</div>
+		<!-- Grid column -->
+
+		<hr
+		class="clearfix w-100 d-md-none">
+
+		<!-- Grid column -->
+		<div class="col-md-3 mx-auto">
+
+
+			<a href="#">À propos de nous</a>
+
+
+		</div>
+		<!-- Grid column -->
+
+		<hr
+		class="clearfix w-100 d-md-none">
+
+		<!-- Grid column -->
+		<div class="col-md-3 mx-auto">
+
+
+			<a href="#">Mentions légales</a>
+
+		</div>
+		<!-- Grid column -->
+
+	</div>
+	<!-- Grid row -->
+
+</div>
+<!-- Footer Links -->
+
+<!-- Copyright -->
+<div class="footer-copyright text-center py-3">© 2020 Copyright:
+	<a href="{{ path('index') }}">
+		Maréva Gauss</a>
+</div>
+<!-- Copyright --></footer>
 </html>

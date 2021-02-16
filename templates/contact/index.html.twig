@@ -18,21 +18,14 @@
       {% endfor %}
     {% endfor %}
     {{ form_start(contact_form) }}
-      <div class="row">
-        <div class="col">
-          {{ form_label(contact_form.email, "Votre email") }}
-          {{ form_widget(contact_form.email) }}
-        </div>
-      </div>
-
-      {{ form_rest(contact_form) }}
-
+    {{ form_end(contact_form) }}
+    
       <div class="row">
         <div class="col">
           <input type="submit" value="Envoyer" class="btn btn-success" />
         </div>
       </div>
 
-    {{ form_end(contact_form) }}
+    
   </div>
 {% endblock %}
