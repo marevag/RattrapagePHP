@@ -13,22 +13,8 @@
 <div class="container">
   <h2 class="mb-5">Nos derniers produits</h2>
 
-  <table class="table">
-            <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Picture</th>
-                <th>Description</th>
-                <th>Created</th>
-            </tr>
-
   {% for produit in produits %}
   <div class="d-lg-flex border-bottom border-dark pb-3 mb-3">
-    <div class="mr-lg-3 product-img">
-      <a href="#">
-        <img class="img-fluid" src="{{ produit.image }}" alt="{{ produit.name }}" />
-      </a>
-    </div>
     <div class="infos">
       <h3>
         <a href="#" class="text-decoration-none text-body">
@@ -36,7 +22,8 @@
         </a>
       </h3>
       <p>{{ produit.created|date('d/m/Y') }}</p>
-      <a href="#" class="btn btn-light">En savoir +</a>
+      <img src={{ produit.picture }}/>
+      <a href="#" class="btn btn-dark">En savoir +</a>
     </div>
   </div>
   {% endfor %}

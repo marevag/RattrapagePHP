@@ -5,6 +5,7 @@ namespace App\DataFixtures;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use Faker;
+use App\Entity\Produit;
 
 class AppFixtures extends Fixture
 {
